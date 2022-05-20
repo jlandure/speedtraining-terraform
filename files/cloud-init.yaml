@@ -29,7 +29,7 @@ write_files:
       var app = express()
       var os = require('os');
       app.get('/', function (req, res) {
-        res.send('<h1>Hello World !</h1><p>HOSTNAME : ' + os.hostname() + '</p>')
+        res.send('<h1>Hello World from Speed Training Terraform !</h1><p>HOSTNAME : ' + os.hostname() + '</p><br><br>Credits: <a href="https://jlandure.dev">jlandure</a>')
       })
       app.listen(3000, function () {
         console.log('Hello world app listening on port 3000!')

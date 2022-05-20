@@ -1,0 +1,9 @@
+name_prefix           = "training-iac-jle"
+vpc_name              = "training-iac-jle-vpc"
+subnet_name           = "training-iac-jle-subnet"
+#ingress_allow         = [{ ports : "80", protocol : "tcp" }, { ports : "22", protocol : "tcp" }]
+instance_zone         = "europe-west1-b"
+os_image_family       = "ubuntu-minimal-2204-lts"
+os_image_project      = "ubuntu-os-cloud"
+instance_type         = "e2-standard-2"
+cloudinit_script_path = "../../files/cloud-init.yaml"
